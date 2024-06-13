@@ -8,6 +8,7 @@ import {
 import HomePage from "./pages/home";
 import DetailProduct from "./pages/detailProduct";
 import CardProduct from "./components/cardProduct";
+import SignInSide from "./pages/login";
 import NavBar from "./components/navbar";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/detail" element={<DetailProduct />} />
-        <Route path="/card" element={<CardProduct />} />
+        <Route path="/login" element={<SignInSide />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

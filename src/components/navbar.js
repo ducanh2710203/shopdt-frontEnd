@@ -16,8 +16,8 @@ export default function NavBar() {
       case "Home":
         navigate("/");
         break;
-      case "detail product":
-        navigate("/detail");
+      case "login":
+        navigate("/login");
         break;
       default:
         break;
@@ -35,8 +35,8 @@ export default function NavBar() {
         icon={<RestoreIcon />}
       />
       <BottomNavigationAction
-        label="detail product"
-        value="detail product"
+        label="login"
+        value="login"
         icon={<FavoriteIcon />}
       />
     </BottomNavigation>
