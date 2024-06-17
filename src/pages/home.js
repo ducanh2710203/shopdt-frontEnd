@@ -24,7 +24,7 @@ export default function HomePage() {
             sx={{ marginX: "auto" }}
             variant="outlined"
             component={Link}
-            to="/detail"
+            to="/iphone"
           >
             Show all
           </Button>
@@ -47,7 +47,7 @@ export default function HomePage() {
             sx={{ marginX: "auto" }}
             variant="outlined"
             component={Link}
-            to="/detail"
+            to="/iphone"
           >
             Show all
           </Button>
@@ -70,7 +70,7 @@ export default function HomePage() {
             sx={{ marginX: "auto" }}
             variant="outlined"
             component={Link}
-            to="/detail"
+            to="/iphone"
           >
             Show all
           </Button>

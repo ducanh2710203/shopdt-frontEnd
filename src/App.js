@@ -17,7 +17,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail" element={<DetailProduct />} />
+        <Route path="/iphone" element={<DetailProduct />} />
         <Route path="/login" element={<SignInSide />} />
 
         <Route path="*" element={<Navigate to="/" />} />
