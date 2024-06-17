@@ -10,7 +10,7 @@ import DetailProduct from "./pages/detailProduct";
 import CardProduct from "./components/cardProduct";
 import SignInSide from "./pages/login";
 import NavBar from "./components/navbar";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -22,6 +22,7 @@ function App() {
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 }

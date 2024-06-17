@@ -30,6 +30,52 @@ export default function HomePage() {
           </Button>
         </Box>
       </div>
+      <div style={{ paddingRight: 150, paddingLeft: 150 }}>
+        <h3 style={{ textAlign: "center" }}>
+          <b>Ipad</b>
+        </h3>
+        <ListTop />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingY: 4,
+          }}
+        >
+          <Button
+            sx={{ marginX: "auto" }}
+            variant="outlined"
+            component={Link}
+            to="/detail"
+          >
+            Show all
+          </Button>
+        </Box>
+      </div>
+      <div style={{ paddingRight: 150, paddingLeft: 150 }}>
+        <h3 style={{ textAlign: "center" }}>
+          <b>Samsung</b>
+        </h3>
+        <ListTop />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingY: 4,
+          }}
+        >
+          <Button
+            sx={{ marginX: "auto" }}
+            variant="outlined"
+            component={Link}
+            to="/detail"
+          >
+            Show all
+          </Button>
+        </Box>
+      </div>
     </>
   );
 }
