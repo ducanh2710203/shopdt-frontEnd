@@ -4,7 +4,7 @@ import CardProduct from "./cardProduct";
 
 export default function ListTop() {
   return (
-    <a href="/detail">
+    <a href="/id">
       <Grid container spacing={2} wrap="nowrap" sx={{ display: "inline-flex" }}>
         {itemData.map((item, index) => (
           <Grid item xs={3} key={index} sx={{ display: "inline-block" }}>
