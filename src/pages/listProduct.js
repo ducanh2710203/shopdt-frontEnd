@@ -2,7 +2,7 @@ import Pagination from "@mui/material/Pagination";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import CardProduct from "../components/cardProduct";
 import BannerSlider from "../components/bannerTop";
-export default function DetailProduct() {
+export default function listProduct() {
   return (
     <>
       <h2 style={{ textAlign: "center" }}>Iphone</h2>

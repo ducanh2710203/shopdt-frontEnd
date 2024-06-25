@@ -7,7 +7,7 @@ export default function PageSearch() {
     <>
       <div
         style={{
-          paddingTop: "56px",
+          paddingTop: "10px",
           paddingRight: 150,
           paddingLeft: 150,
         }}

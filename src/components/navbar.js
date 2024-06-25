@@ -26,8 +26,8 @@ export default function NavBar() {
     <BottomNavigation
       sx={{
         background: "#515154",
-        position: "fixed",
-        top: 0,
+        // position: "fixed",
+        // top: 0,
         width: "100%",
         zIndex: 1000,
       }}
