@@ -3,8 +3,8 @@ import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import { Button, Grid } from "@mui/material";
 
 export default function CardProduct(props) {
   const [expanded, setExpanded] = React.useState(false);
@@ -27,6 +27,22 @@ export default function CardProduct(props) {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {props.price}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <Button variant="outlined" sx={{ fontSize: 10 }}>
+                Thêm vào giỏ hàng
+              </Button>
+            </Grid>
+            <Grid item xs={6}>
+              <a href="/id">
+                <Button variant="outlined" sx={{ fontSize: 10 }}>
+                  Chi tiết sản phẩm
+                </Button>
+              </a>
+            </Grid>
+          </Grid>
         </Typography>
       </CardContent>
     </Card>
