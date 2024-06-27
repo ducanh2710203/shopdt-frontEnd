@@ -10,30 +10,12 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
 export default function Sidebar() {
-  const listPro = [
-    "iphone",
-    "aripod",
-    "mac",
-    "iphone",
-    "aripod",
-    "mac",
-    "iphone",
-    "aripod",
-    "mac",
-    "iphone",
-    "aripod",
-    "mac",
-    "iphone",
-    "aripod",
-    "mac",
-    "iphone",
-    "aripod",
-  ];
+  const listPro = ["iphone", "aripod", "mac", "ipad", "watch", "Samsung"];
   return (
     <div
       style={{
         height: "100%",
-        background: "grey",
+        background: "white",
         float: "left",
       }}
     >
@@ -45,7 +27,12 @@ export default function Sidebar() {
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <a
+                  href="/iphone"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <ListItemText primary={text} />
+                </a>
               </ListItemButton>
             </ListItem>
           ))}
