@@ -1,5 +1,4 @@
-import Pagination from "@mui/material/Pagination";
-import { Grid, Card, CardContent, Typography } from "@mui/material";
+import { Grid, Button, CardContent, Typography } from "@mui/material";
 import CardProduct from "../components/cardProduct";
 import Grouped from "../components/inpSearch";
 export default function PageSearch() {
@@ -8,14 +7,35 @@ export default function PageSearch() {
       <div
         style={{
           paddingTop: "10px",
-          paddingRight: 150,
-          paddingLeft: 150,
+          paddingRight: 350,
+          paddingLeft: 350,
         }}
       >
-        <Grouped />
+        <h2 style={{ textAlign: "center" }}>Tìm kiếm</h2>
         <Grid container sx={{ paddingTop: "40px" }} spacing={2}>
+          <Grid item sx={{ background: "white", paddingX: "16px" }} xs={12}>
+            <Grouped />
+          </Grid>
+          <Grid
+            item
+            sx={{
+              background: "white",
+              display: "flex",
+              paddingBottom: "16px",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            xs={12}
+          >
+            <a href="search">
+              <Button variant="contained" sx={{ borderRadius: "20px" }}>
+                Tìm kiếm
+              </Button>
+            </a>
+          </Grid>
+
           {itemData.map((item, index) => (
-            <Grid item xs={3} key={index}>
+            <Grid item xs={4} key={index}>
               <CardProduct
                 img={item.img}
                 title={item.title}
